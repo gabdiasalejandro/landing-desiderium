@@ -10,6 +10,8 @@ Landing page estática para Desiderium, una marca de velas aromáticas artesanal
 - `assets/images/` — logo, fotografías de producto y catálogos visuales.
 - `assets/qr/qr-desiderium.svg` — código QR vectorial de la landing pública.
 - `assets/qr/qr-desiderium.png` — código QR en imagen PNG.
+- `assets/favicon/` — favicons cuadrados para navegador, Google y dispositivos.
+- `site.webmanifest` — metadata de iconos para dispositivos/PWA básico.
 
 ## Uso local
 
