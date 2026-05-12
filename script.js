@@ -32,6 +32,11 @@
         p.classList.remove('active');
         p.hidden = true;
       });
+      document.querySelectorAll('.catalogo-card').forEach(card => {
+        const isActiveCatalog = card.dataset.catalogPanel === panel;
+        card.classList.toggle('active', isActiveCatalog);
+        card.hidden = !isActiveCatalog;
+      });
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
       const activePanel = document.getElementById('panel-' + panel);

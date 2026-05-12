@@ -4,11 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Desiderium · Velas Aromáticas</title>
+<meta name="description" content="Velas aromáticas artesanales en Naucalpan. Elige formas, colores y más de 30 fragancias para regalos, eventos y pedidos personalizados.">
+<meta name="keywords" content="Desiderium, velas aromáticas, velas artesanales, Naucalpan, regalos personalizados, velas para eventos, aromas">
+<meta name="author" content="Desiderium">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f5f0e8">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Desiderium">
+<meta property="og:title" content="Desiderium · Velas Aromáticas Artesanales">
+<meta property="og:description" content="Velas artesanales con aromas cuidadosamente seleccionados. Pedidos personalizados en Naucalpan para regalos, eventos y espacios especiales.">
+<meta property="og:image" content="assets/velas-cactus-2.jpg">
+<meta property="og:image:alt" content="Velas aromáticas artesanales Desiderium">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Desiderium · Velas Aromáticas Artesanales">
+<meta name="twitter:description" content="Velas artesanales en Naucalpan con más de 30 aromas y pedidos personalizados.">
+<meta name="twitter:image" content="assets/velas-cactus-2.jpg">
+<meta name="twitter:image:alt" content="Velas aromáticas artesanales Desiderium">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Desiderium",
+  "description": "Velas aromáticas artesanales, regalos y pedidos personalizados en Naucalpan.",
+  "image": "assets/velas-cactus-2.jpg",
+  "telephone": "+52 55 2498 1071",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Naucalpan",
+    "addressCountry": "MX"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61562300376791"
+  ]
+}
+</script>
 
 </head>
 <body>
@@ -53,8 +88,8 @@
       Cada pieza es única — pensada para transformar tu espacio.
     </p>
     <div class="hero-actions">
-      <a href="#catalogo" class="btn-primary">Ver catálogo</a>
-      <a href="#contacto" class="btn-ghost">Hacer un pedido</a>
+      <a href="#contacto" class="btn-primary btn-order">Hacer pedido</a>
+      <a href="#catalogo" class="btn-ghost">Ver aromas</a>
     </div>
   </div>
   <div class="hero-right">
@@ -113,7 +148,7 @@
     <button class="aroma-tab active" data-panel="florales" type="button" role="tab" aria-selected="true" aria-controls="panel-florales">Florales</button>
     <button class="aroma-tab" data-panel="frutales" type="button" role="tab" aria-selected="false" aria-controls="panel-frutales">Frutales</button>
     <button class="aroma-tab" data-panel="herbales" type="button" role="tab" aria-selected="false" aria-controls="panel-herbales">Herbales</button>
-    <button class="aroma-tab" data-panel="madera" type="button" role="tab" aria-selected="false" aria-controls="panel-madera">Tabaco & Madera</button>
+    <button class="aroma-tab" data-panel="cuero" type="button" role="tab" aria-selected="false" aria-controls="panel-cuero">Tabaco & Cuero</button>
     <button class="aroma-tab" data-panel="otros" type="button" role="tab" aria-selected="false" aria-controls="panel-otros">Especiales</button>
   </div>
 
@@ -157,12 +192,12 @@
     </div>
   </div>
 
-  <div id="panel-madera" class="aromas-panel" role="tabpanel" hidden>
+  <div id="panel-cuero" class="aromas-panel" role="tabpanel" hidden>
     <div class="aromas-list">
       <span class="aroma-pill">Nordic Leather</span>
       <span class="aroma-pill">Tobacco</span>
     </div>
-    <p class="aroma-desc">Nordic Leather — aroma enigmático de cuero y especias &nbsp;·&nbsp; Tobacco — notas amaderadas y especias</p>
+    <p class="aroma-desc">Nordic Leather — aroma enigmático de cuero y especias &nbsp;·&nbsp; Tobacco — notas de tabaco, cuero y especias</p>
   </div>
 
   <div id="panel-otros" class="aromas-panel" role="tabpanel" hidden>
@@ -178,38 +213,26 @@
     </p>
   </div>
 
-  <div class="catalogo-gallery reveal" aria-label="Catálogos visuales de aromas">
-    <article class="catalogo-card">
+  <div class="catalogo-gallery reveal" aria-label="Catálogo visual de la categoría seleccionada">
+    <article class="catalogo-card active" data-catalog-panel="florales">
       <img src="assets/aromas-florales-catalogo.jpg" alt="Catálogo de aromas florales" loading="lazy">
       <div><span>Catálogo</span><strong>Florales</strong></div>
     </article>
-    <article class="catalogo-card">
+    <article class="catalogo-card" data-catalog-panel="frutales" hidden>
       <img src="assets/aromas-frutales-catalogo.jpg" alt="Catálogo de aromas frutales" loading="lazy">
       <div><span>Catálogo</span><strong>Frutales</strong></div>
     </article>
-    <article class="catalogo-card">
+    <article class="catalogo-card" data-catalog-panel="herbales" hidden>
       <img src="assets/aromas-herbales-catalogo.jpg" alt="Catálogo de aromas herbales" loading="lazy">
       <div><span>Catálogo</span><strong>Herbales</strong></div>
     </article>
-    <article class="catalogo-card">
-      <img src="assets/aromas-tabaco-y-madera-catalogo.jpg" alt="Catálogo de aromas tabaco y madera" loading="lazy">
-      <div><span>Catálogo</span><strong>Tabaco & Madera</strong></div>
+    <article class="catalogo-card" data-catalog-panel="cuero" hidden>
+      <img src="assets/aromas-tabaco-y-madera-catalogo.jpg" alt="Catálogo de aromas tabaco y cuero" loading="lazy">
+      <div><span>Catálogo</span><strong>Tabaco & Cuero</strong></div>
     </article>
-    <article class="catalogo-card">
-      <img src="assets/aromas-especias.catalogo.jpg" alt="Catálogo de aromas especiados" loading="lazy">
-      <div><span>Catálogo</span><strong>Especiados</strong></div>
-    </article>
-    <article class="catalogo-card">
-      <img src="assets/aromas-comida-catalogo.jpg" alt="Catálogo de aromas de comida" loading="lazy">
-      <div><span>Catálogo</span><strong>Gourmand</strong></div>
-    </article>
-    <article class="catalogo-card">
-      <img src="assets/aromas-ambientales-catalogo.jpg" alt="Catálogo de aromas ambientales" loading="lazy">
-      <div><span>Catálogo</span><strong>Ambientales</strong></div>
-    </article>
-    <article class="catalogo-card">
-      <img src="assets/otros-aromas-catalogo.jpg" alt="Catálogo de otros aromas" loading="lazy">
-      <div><span>Catálogo</span><strong>Otros aromas</strong></div>
+    <article class="catalogo-card" data-catalog-panel="otros" hidden>
+      <img src="assets/otros-aromas-catalogo.jpg" alt="Catálogo de aromas especiales" loading="lazy">
+      <div><span>Catálogo</span><strong>Especiales</strong></div>
     </article>
   </div>
 </section>
@@ -225,15 +248,15 @@
     <div>
       <div class="especial-card" style="margin-bottom: 1.5rem">
         <div class="especial-corner"></div>
-        <p class="especial-tag">Tabaco & Madera</p>
+        <p class="especial-tag">Tabaco & Cuero</p>
         <h3 class="especial-name">Nordic Leather</h3>
         <p class="especial-desc">Un aroma enigmático que combina notas profundas de cuero con especias cálidas. Para los espacios que inspiran carácter.</p>
       </div>
       <div class="especial-card">
         <div class="especial-corner"></div>
-        <p class="especial-tag">Tabaco & Madera</p>
+        <p class="especial-tag">Tabaco & Cuero</p>
         <h3 class="especial-name">Tobacco</h3>
-        <p class="especial-desc">Una mezcla sofisticada de notas amaderadas y especias. Profundo, cálido, persistente.</p>
+        <p class="especial-desc">Una mezcla sofisticada de notas de tabaco, cuero y especias. Profundo, cálido, persistente.</p>
       </div>
     </div>
     <div>
